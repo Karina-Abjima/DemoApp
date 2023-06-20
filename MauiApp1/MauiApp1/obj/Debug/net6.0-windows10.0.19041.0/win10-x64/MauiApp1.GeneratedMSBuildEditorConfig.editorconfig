@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[D:/DemoApp/MauiApp1/MauiApp1/UserDataPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.UserDataPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserDataPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserDataPage.xaml
+
 [D:/DemoApp/MauiApp1/MauiApp1/VideoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.VideoPage.xaml

@@ -49,12 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="UserDataPage.xaml.cs">
+	    <DependentUpon>UserDataPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="VideoPage.xaml.cs">
 	    <DependentUpon>VideoPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="UserDataPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="VideoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

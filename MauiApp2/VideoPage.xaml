@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:local="clr-namespace:MauiApp2"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.VideoPage"
+               >
+
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <WebView x:Name="myWebView" WidthRequest="400" HeightRequest="300" />
+        <Button Text="Enter User Data" Clicked="OnEnterUserDataClicked" />
+    </StackLayout>
+
+
+
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:local="clr-namespace:MauiApp1"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.UserDataPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Entry x:Name="nameEntry" Placeholder="Enter your name" />
+        <Entry x:Name="rollNumberEntry" Placeholder="Enter your roll number" />
+        <DatePicker x:Name="dobPicker" DateSelected="OnDateSelected" />
+        <Button Text="Save" Clicked="OnSaveClicked" />
+    </StackLayout>
+
+</ContentPage>
