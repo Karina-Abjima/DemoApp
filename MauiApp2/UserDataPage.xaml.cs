@@ -23,11 +23,11 @@ public partial class UserDataPage : ContentPage
         dob = e.NewDate;
     }
 
-        private void OnSaveClicked(object sender, EventArgs e)
+        private async void OnSaveClicked(object sender, EventArgs e)
         {
             name = nameEntry.Text;
             rollNumber = rollNumberEntry.Text;
-
+            dob = dobDatePicker.Date;
             // Create a new UserData instance
             var userData = new Models.UserData
             {
@@ -44,9 +44,9 @@ public partial class UserDataPage : ContentPage
             {
                 connection.Open();
                 string query = "INSERT INTO UserData (Name, RollNumber, DOB) VALUES (@Name, @RollNumber, @DOB)";
-                connection.Execute(query, userData);
+                  connection.Execute(query, userData);
             }
-
+            await Navigation.PushAsync(new SuccessPage());
         }
     }
 

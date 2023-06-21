@@ -49,6 +49,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.138" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
@@ -62,6 +64,10 @@
 	  <MauiXaml Update="VideoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Services\" />
 	</ItemGroup>
 
 </Project>
