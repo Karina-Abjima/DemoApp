@@ -7,24 +7,24 @@ using Dapper;
 namespace MauiApp2
 
 {
-public partial class UserDataPage : ContentPage
-{
-     private string name;
-    private string rollNumber;
-    private DateTime dob;
-
-    public UserDataPage()
+    public partial class UserDataPage : ContentPage
     {
-        InitializeComponent();
-    }
+        private string name;
+        private string rollNumber;
+        private DateTime dob;
 
-    private void OnDateSelected(object sender, DateChangedEventArgs e)
-    {
-        dob = e.NewDate;
-    }
+        public UserDataPage()
+        {
+            InitializeComponent();
+        }
+
+        private void OnDateSelected(object sender, DateChangedEventArgs e)
+        {
+            dob = e.NewDate;
+        }
 
         private async void OnSaveClicked(object sender, EventArgs e)
-        { 
+        {
             name = nameEntry.Text;
             rollNumber = rollNumberEntry.Text;
             dob = dobPicker.Date;
@@ -44,10 +44,10 @@ public partial class UserDataPage : ContentPage
             {
                 connection.Open();
                 string query = "INSERT INTO UserData (Name, RollNumber, DOB) VALUES (@Name, @RollNumber, @DOB)";
-                  connection.Execute(query, userData);
+                connection.Execute(query, userData);
             }
             //await Navigation.PushAsync(new SuccessPage());
         }
     }
 
-}
+} 

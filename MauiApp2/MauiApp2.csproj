@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿ <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
@@ -60,7 +60,7 @@
 	  </Compile>
 	  <Compile Update="VideoPage.xaml.cs">
 	    <DependentUpon>VideoPage.xaml</DependentUpon>
-	  </Compile>
+	  </Compile> 
 	</ItemGroup>
 
 	<ItemGroup>

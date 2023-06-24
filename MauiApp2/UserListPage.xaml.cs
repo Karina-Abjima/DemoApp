@@ -18,7 +18,7 @@ namespace MauiApp2
                     listView = new ListView
                     {
                         ItemTemplate = new DataTemplate(typeof(UserDataCell)),
-                        ItemsSource = DatabaseService.GetUserData() // Retrieve the user data from the database
+                     //   ItemsSource = DatabaseService.GetUserData() // Retrieve the user data from the database
                     };
 
                     Content = new StackLayout
